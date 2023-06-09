@@ -6,3 +6,393 @@ hie
 
 s=[1,2,3,]
 print(s)
+
+python learning:
+# print("hello dear")
+# #this is a comment
+# #for new line:use \n , multiple line ma yekaichoti dina lai -ctrl copy + /
+
+# print("i like mango \n i ate it")
+# print("good night ")
+# #multiple line lai comment garna triple single quote or triple double quote at starting and ending
+# """
+# hey
+# sarina
+# awal
+# """
+# #to print this is "nepal" : to get the " ", we need to type like \"nepal\"
+# print("this is \"nepal\" and i live here")
+# #also we can use some string to separate the written word and add anything at the end.
+# print("hey", 9, 23, "sarina", sep=" & ", end="123")
+
+# #day 6:variable and constants
+# a = 5
+# print(a)
+# b = "sarina"
+# print(b)
+# c = complex(3, 6)
+# print(c)
+# d = None
+# print(d)
+# e = True
+# print(e)
+# #to see their data type
+# print("the type of a is ", type(a))
+# print("the type of a is ", type(b))
+# print("the type of a is ", type(c))
+# print("the type of a is ", type(d))
+# print("the type of a is ", type(e))
+# #list : ordered collection of different data types and are mutable means can be changed
+# list = [8, 'sarina', 1.23]
+# print(list)
+# tuple = (8, "awal", 5.67)
+# print(tuple)
+# #dict contains key:data value
+# dict = {"name": "sarina", "age": 20}
+# print(dict)
+
+# #operators
+# print(2+4)
+# print(2-4)
+# print(2*4)
+# print(5/2)
+# print(5//2)#point paxadi ko didaina floor division
+# print(5**3)#5*5*5 exponential
+
+# a = 8
+# b = 2
+# print("the value of ", a, "+", b, "is ",
+#       a + b)  #alt+shift down garyo vane mathi ko copy paste garna sakinxa
+# print("the value of", a, "-", b, "is ", a - b)
+# print("the value of ", a, "*", b, "is ", a * b)
+# print("the value of ", a, "/", b, "is ", a / b)
+# print("the value of ", a, "%", b, "is ", a % b)
+
+#type casting(day 9)
+#explicit type casting
+# a="2"
+# b="3"
+# print(a+b)
+# print(int(a)+int(b))#hamro demand ko according ma change gariyo
+# #implicit type conversion
+# c=2.3
+# d=4
+# print(c+d)#python le afai convert gardiyo
+
+#day 10(taking input from user)
+# s=input("enter your name:")
+# print("my name is ",s)
+
+# print("enter the first number:")
+# t=input()
+# print("enter the second number:")
+# l=input()
+# print(t + l)#input ()returns the value as string
+# print(int(t)+int(l))
+
+# DAY 11(accessing the part of string)
+# name="sarinkesh,saena"
+# print(name[0])
+# print(name[1])
+# print(name[2])
+# print(name[5])
+# for character in name:#for loop for accessing all the strings present
+#   print(character)
+# # DAY 12 # slicing of string and operation on string
+# print(name[0:9])#0 to n-1 char dinxa 9-1=8 0to 8 index samma kodiyo ie including 0 index not 9th index
+# print(len(name))
+# print(name[:9]) #afai 0 to 9 dinxa
+# print(name[:]) #afai 0 to len of char samma dinxa
+# print(name[2:9])
+# print(name[0:-10]) #it is 0 to len(name)-10
+# print(name[-3:-9]) #len(name)-3:len(name)-9 ==>12:6 not possible
+# print(name[-9:-3])  #6:12
+# a="!!! harry potter !!!"
+# print(a[-4:-2])
+# # DAY 13 ** methods in string
+# print(a.upper())
+# print(a.lower())
+# print(a.strip())
+# print(a.rstrip("!"))
+# print(a.replace("harry","jazz"))  #replace harry by jazz
+# print(a.split()) # words separated by  space is shown in the form of list
+# s="life is full of upS and Downs"
+# print(s.capitalize())
+# print(s.center(50,'.'))
+# print(s.count("harry"))
+# print(s.endswith("***"))
+# print(s.startswith("life"))
+# print(s.find("is"))
+# print(s.find("si"))
+# #print(s.index("yr")) substring not found vanera error generated
+# print(s.isalnum())# space ni hunu hudaina
+# print(s.isalpha())
+# s="Successful  Life\n"
+# print(s.isprintable())
+# print(s.isspace())
+# print(s.istitle())
+# s="aim big work hard"
+# print(s.title())
+# girl = input()
+# if (girl == "sarina"):
+#   print(" she is good girl")
+# else:
+#   print("bad girl")
+
+# # else if statement
+# a = int(input("enter the class"))
+# print(a != 12)  #<,>,==,!=,<=,>=
+# if (a < 16):
+#   print("you are in bachelor")
+# elif (a > 16):
+#   print("you re in masters")
+# else:
+#   print("you are in college")
+
+# # nested if else statement
+# if (a > 16):
+#   print("good")
+# elif (a < 16):
+#   if (a != 13):
+#     print("excellent")
+#   elif (a >= 15):
+#     print("very good")
+#   else:
+#     print("not bad")
+# else:
+#   print("do well")
+
+## for loop for strings
+# name="sarina"
+# for j in name:
+#   print(j, end=' ')
+#   if(j=="i"):
+#     print("am good girl")
+
+# #for loop for lists
+# x=["mouse","rat","dog","rabbit"]
+# for i in x:
+#   print(i)
+#   for j in i:
+#     print(j)
+# #for loop for numbers (range vanne keyword use hunxa)tala ko ma 5 is ommited ,0 to 4 matra dekhauxa
+# for i in range(5):
+#   print(i)# to include 5 use print(i +1)
+# for k in range(20,30,2):
+#   print(k)
+#   #range(start,end,step)
+# #while loop :executes when the condition is true otherwise comes out from loop
+# i=0
+# while(i<5):
+#   print(i)
+#   i=i+1
+# print("come out of the loop")
+# k=int(input("enter the number:"))
+# while(k<=30):
+#   k=int(input("enter the number:"))
+#   print(k)
+# print("loop ends") # loop bata bahira niskinu agadi print garaune statement yesari lekhne
+# #yei mathi ko kura lai else with while statement use garera pani execute garna sakinxa
+# k=int(input("enter the number:"))
+# while(k<=30):
+#   k=int(input("enter the number:"))
+#   print(k)
+# else:
+#   print("loop ends")
+
+#do while loop python ma hudaina , yo kamti ma yekchoti vaye ni execute garxa irrespective of the condition is true or false.it is also known as exit-controlled loop
+# while True:
+#   num=int(input("enter the number"))
+#   print(num)
+#   if  num > 0:
+#     break
+# break means "exit from the loop" and continue means "exit from iteration"continue statement ko mathi j xa tyo execute hunxa but tespaxi ko hudaina particular one tara tespaxi ko pheri execute garxa
+# for i in range(12):
+#   if(i==11):
+#    break
+#    print("5 *", i, "=",5*i)
+# print("exit from the loop")
+# for i in range(0,13):
+#     if i == 11:
+      
+#      continue
+#      print("5 *", i, "=", 5 * i)
+#didnt work mathi ko continue wala
+# i = 0
+# while i < 6:
+#   i += 1
+#   if i == 3:
+#     continue
+#   print(i)
+
+# #function:it is the block of code that performs specific task when it is called
+# a=5
+# b=5
+# c=10
+# d=12
+# def mean(a, b):
+#   mean=(a+b)/2
+#   print(mean)
+# mean(a,b)
+# def isGreater(c,d):
+#   if(c>d):
+#     print(c," is greater")
+#   else:
+#     print(d," is greater")
+# isGreater(c,d)
+
+# e=12
+# f=16
+# mean(e,f)
+# isGreater(e,f)
+
+# def add(k,l):
+#   pass  # pass means i will come later and complete this function,pass and process the next function
+
+#data science :find the minimum of three values
+# n1=int(input("enter the first number"))
+# n2=int(input("enter the second number"))
+# n3=int(input("enter the third number"))
+# minimum =n1
+# if (n2 < minimum):
+#   minimum=n2
+# if n3 < minimum:
+#   minimum=n3
+
+# else:
+#   n3=minimum yesto garyo vane n3 ma minimum no vaye pani n2 ki n1 madye ko smallest print gardinxa
+# print("minimum value is: ",minimum)
+
+# x= min(36 , 12 ,27)
+# print(x)
+# y=max(36 , 27, 12)
+# print(y)
+# # print("minimum value is: ",min) gives output <built-in function min>
+
+## passing arguments to function
+## 1) default arguments
+# def add(a=2,b=5):
+#   print(a+b)
+# add()
+# add(4,6)
+# add(a=7)#jaba calling function ma a or b ko valuse deko hudaina taba default value use garxa otherwise diyeko value use garxa
+# add(b=6)
+
+# #2) keyword arguments: order doesnot matter at all
+# add(b=6,a=7)
+
+# #3) required argument
+# def sub(a,b=6):
+#   print(a-b)
+# sub(a=10)  #yesma a ko default vlaue deko xaina so a ko value tw jasari vaye ni chahinxa nai so it is required argument
+
+# def name1(nam1, nam2,nam3):
+#   print("hello",nam1,nam2,nam3)
+
+# name1("sarina","digita","sraza")
+
+# def mean(*numbers):
+#   print(type(numbers))
+#   sum=0
+#   for i in numbers:
+#     sum=sum+i
+#   print(sum/len(numbers))
+# mean(2,3,4,5)
+
+# ## return statement :use to return the value of the expression back to the calling function.
+# def add1(a=4,b=6,c=3):
+#   return (a+b+c)
+# x=add1()
+# print (x)
+
+## day 22(list ):list are changeable but tuple aren't changeable
+# marks = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+# # i=0
+# # for i in marks:
+# #    print(i)
+# # print(marks)
+# # print(marks[0])
+# # print(marks[1])
+# # print(marks[2])
+# # print(type(marks))
+# # print(marks[-3]) #negative indexing
+# # print(marks[len(marks)-3]) #positive indexing
+# #check whether an item is present in the list
+# if 8 in marks:
+#   print("yes")
+# else:
+#   print("no")
+# #same thing applies in string
+# if "rink" in "sarina":
+#   print("yes")
+# else:
+#   print("no")
+# print(marks[:])
+# print(marks[1:11])
+# print(marks[1:11:2])  #[start:end:jump]
+# print(marks[4:])  #prints all element from given index till the end
+# print(marks[:9])  #prints all element from starting to given index
+# #list comprehensive:used for creating new list from other iterables like lists,tuples, dictionaries,set and even in arrays or strings
+# lst = [i * i for i in range(11)
+#        ]  #syntax:expression(item) for item in iterable if condition
+# print(lst)
+# lst1 = [i * i for i in range(11) if i % 2 == 0]  #with condition
+# print(lst1)
+
+## day 23(list methods)
+# l = [1, 5, 6, 8, 21, 45, 0,1,1,1]
+# l.reverse()  #print(l.reverse()) lekhda none dinxa
+# print(l)
+# l.append(12)
+# print(l)  #adds the element at the last of the list
+# l.sort()  #sort in ascending order
+# print(l)
+# l.sort(reverse=True)  #sort in descending order
+# print(l)
+# print(l.index(8))  #returns the index of first occurrence of list item
+# # m = l
+# # m[0] = 23
+# # print(l)  #changes the value of l list where 0th index= 23
+# p = l.copy()
+# p[0] = 2
+# print(l)  #doesnot change the list of l but p is the copy of l
+# print(l.count(1))
+# l.insert(4,9)
+# print(l) #override hudai gako xa hai
+# k= [ 33,22,44,55 ]
+# l.append(k)
+# print(l)
+# l.extend(k)# l lai kholera k ko list item pani tesmai joddiyo 
+# print(l)
+# m=k+l #concatenate
+# print(m)
+
+## day 24(tuples:ordered collecation of data items)
+t=(1) # big confusion python le as an int bujxa
+print(type(t),t)
+t=(1,"sarina",3,4,"pink")
+print(type(t),t)
+#tuple cant be altered 
+# t[0]=99
+# print(t) gives error
+print(t[0])
+print(t[1])
+print(len(t))
+print(t[-2])
+if 56 in t:
+  print("yes")
+else:
+  print("no")
+t[2:4]
+print(t)
+#list ma jastai slicing dekhi liyera aru sabai garna sakinxa 
+  
+  
+  
+    
+    
+    
+   
+
+
+ 
